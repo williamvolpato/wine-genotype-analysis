@@ -85,6 +85,8 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
 ```
 |-- data/
     |-- Analysis.csv  # Raw dataset
+|-- docs/
+    |-- step1_data_loading_and_eda.md # Step 1
 |-- notebooks/
     |-- wine_genotype_analysis.ipynb  # Notebook with analysis
 |-- README.md  # Project description
