@@ -34,23 +34,45 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
 
 ## Steps Performed / Etapas Realizadas
 
+### **Step 1: Data Loading and EDA**
+
 **English:**
-1. **Data Loading:** The dataset was imported into Python for analysis.
-2. **Exploratory Data Analysis (EDA):**
-   - Visualized data structure, statistics, and distributions.
-   - Identified relationships and correlations between variables.
-3. **Key Findings:**
-   - Strong correlation (~0.88) between `Skinfirmness` and `PhysiologicalMaturity`.
-   - Boxplots showed variability in `ABW` (Average Bunch Weight) across different genotypes.
+1. Imported the dataset (`Analysis.csv`) into Python.
+2. Examined the structure and characteristics of the data:
+   - Checked data types and column names.
+   - Identified missing or inconsistent values.
+3. Generated descriptive statistics to understand distributions.
+4. Created visualizations:
+   - Histograms to analyze the distribution of numerical variables.
+   - Scatter plots to explore relationships between key variables.
 
 **Português:**
-1. **Carregamento dos Dados:** O conjunto de dados foi importado para Python para análise.
-2. **Análise Exploratória de Dados (EDA):**
-   - Visualização da estrutura dos dados, estatísticas e distribuições.
-   - Identificação de relações e correlações entre variáveis.
-3. **Principais Descobertas:**
-   - Correlação forte (~0.88) entre `Skinfirmness` e `PhysiologicalMaturity`.
-   - Boxplots mostraram variabilidade em `ABW` (Peso Médio dos Cachos) entre diferentes genótipos.
+1. Importou-se o conjunto de dados (`Analysis.csv`) no Python.
+2. Examinou-se a estrutura e as características dos dados:
+   - Verificação dos tipos de dados e nomes das colunas.
+   - Identificação de valores ausentes ou inconsistentes.
+3. Geração de estatísticas descritivas para entender distribuições.
+4. Criação de visualizações:
+   - Histogramas para analisar a distribuição de variáveis numéricas.
+   - Gráficos de dispersão para explorar relações entre variáveis-chave.
+
+### **Step 2: Correlation Analysis**
+
+**English:**
+1. Generated a correlation matrix to identify variable relationships.
+2. Visualized pairs of variables with high or moderate correlations:
+   - Strong positive correlation (~0.88) between `Skinfirmness` and `PhysiologicalMaturity`.
+   - Moderate positive correlation (~0.65) between `BL` (Bunch Length) and `BW` (Bunch Weight).
+   - Weak positive correlation (~0.12) between `Seed weight` and `PhysiologicalMaturity`.
+3. Interpreted the results and documented the insights.
+
+**Português:**
+1. Geração de uma matriz de correlação para identificar relações entre variáveis.
+2. Visualização de pares de variáveis com correlações altas ou moderadas:
+   - Correlação positiva forte (~0.88) entre `Skinfirmness` e `PhysiologicalMaturity`.
+   - Correlação positiva moderada (~0.65) entre `BL` (Comprimento do Cacho) e `BW` (Peso do Cacho).
+   - Correlação positiva fraca (~0.12) entre `Seed weight` e `PhysiologicalMaturity`.
+3. Interpretação dos resultados e documentação dos insights.
 
 ---
 
@@ -71,10 +93,12 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
 ## Next Steps / Próximos Passos
 
 **English:**
+- Investigate outliers to understand their potential impact.
 - Develop dashboards in Power BI to present insights interactively.
 - Explore the impact of genotypes on other key variables.
 
 **Português:**
+- Investigar outliers para entender seu impacto potencial.
 - Desenvolver dashboards no Power BI para apresentar insights de forma interativa.
 - Explorar o impacto dos genótipos em outras variáveis principais.
 
@@ -84,11 +108,12 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
 
 ```
 |-- data/
-    |-- Analysis.csv  # Raw dataset
+|   |-- Analysis.csv  # Raw dataset
 |-- docs/
-    |-- step1_data_loading_and_eda.md # Step 1
+|   |-- step1_data_loading_and_eda.md  # Step 1
+|   |-- step2_correlation_analysis.md  # Step 2
 |-- notebooks/
-    |-- wine_genotype_analysis.ipynb  # Notebook with analysis
+|   |-- Wine_Genotype_Classification - Etapa 1.ipynb  # Notebook for Step 1
+|   |-- Wine_Genotype_Classification_Etapa_2.ipynb  # Notebook for Step 2
 |-- README.md  # Project description
 ```
-
