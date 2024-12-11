@@ -74,6 +74,21 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
    - Correlação positiva fraca (~0.12) entre `Seed weight` e `PhysiologicalMaturity`.
 3. Interpretação dos resultados e documentação dos insights.
 
+### **Step 3: Outlier Analysis**
+
+**English:**
+
+1. Identified outliers in key variables (ABW, BW, Seed Weight) using the Interquartile Range (IQR) method.
+2. Visualized boxplots for each variable to highlight outliers.
+3. Compared the characteristics of outliers with non-outliers to identify patterns.
+4. Retained all data, including outliers, for potential modeling and analysis in the next steps.
+
+**Português:**
+1. Identificou-se outliers nas variáveis principais (ABW, BW, Seed Weight) utilizando o método do Intervalo Interquartil (IQR).
+2. Visualização de boxplots para cada variável destacando os outliers.
+3. Comparação das características dos outliers com os não-outliers para identificar padrões.
+4. Mantiveram-se todos os dados, incluindo os outliers, para modelagem e análises futuras.
+
 ---
 
 ## Tools Used / Ferramentas Utilizadas
@@ -93,14 +108,12 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
 ## Next Steps / Próximos Passos
 
 **English:**
-- Investigate outliers to understand their potential impact.
-- Develop dashboards in Power BI to present insights interactively.
-- Explore the impact of genotypes on other key variables.
+- Prepare data for modeling by encoding categorical variables and scaling numerical ones.
+- Begin initial model selection and evaluation.
 
 **Português:**
-- Investigar outliers para entender seu impacto potencial.
-- Desenvolver dashboards no Power BI para apresentar insights de forma interativa.
-- Explorar o impacto dos genótipos em outras variáveis principais.
+- Preparar os dados para modelagem, codificando variáveis categóricas e escalonando variáveis numéricas.
+- Iniciar a seleção e avaliação inicial de modelos.
 
 ---
 
@@ -108,12 +121,18 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
 
 ```
 |-- data/
-|   |-- Analysis.csv  # Raw dataset
+|   |-- Analysis.csv          # Conjunto de dados original
+|
 |-- docs/
-|   |-- step1_data_loading_and_eda.md  # Step 1
-|   |-- step2_correlation_analysis.md  # Step 2
+|   |-- step1_data_loading_and_eda.md   # Etapa 1
+|   |-- step2_correlation_analysis.md   # Etapa 2
+|   |-- step3_outlier_analysis.md       # Etapa 3
+|
 |-- notebooks/
-|   |-- Wine_Genotype_Classification - Etapa 1.ipynb  # Notebook for Step 1
-|   |-- Wine_Genotype_Classification_Etapa_2.ipynb  # Notebook for Step 2
-|-- README.md  # Project description
+|   |-- Wine_Genotype_Classification - Etapa 1.ipynb   # Notebook da Etapa 1
+|   |-- Wine_Genotype_Classification_Etapa_2.ipynb   # Notebook da Etapa 2
+|   |-- Wine_Genotype_Classification_Etapa_3.ipynb   # Notebook da Etapa 3
+|
+|-- README.md                 # Descrição geral do projeto
+
 ```
