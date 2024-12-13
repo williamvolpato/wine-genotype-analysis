@@ -89,18 +89,32 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
 3. Comparação das características dos outliers com os não-outliers para identificar padrões.
 4. Mantiveram-se todos os dados, incluindo os outliers, para modelagem e análises futuras.
 
+### **Step 4: Data Modeling and Feature Importance**
+
+**English:**
+1. Prepared data for machine learning models by normalizing numerical variables and encoding categorical variables.
+2. Trained several models, including Random Forest and Gradient Boosting, with hyperparameter tuning using GridSearchCV.
+3. Evaluated model performance using Mean Squared Error (MSE), Mean Absolute Error (MAE), and R² Score.
+4. Visualized feature importance to understand the most influential variables in predicting the target variable (`Skinfirmness`).
+
+**Português:**
+1. Preparou-se os dados para modelos de aprendizado de máquina, normalizando variáveis numéricas e codificando variáveis categóricas.
+2. Treinamento de diversos modelos, incluindo Random Forest e Gradient Boosting, com ajuste de hiperparâmetros utilizando GridSearchCV.
+3. Avaliação do desempenho dos modelos utilizando Erro Quadrático Médio (MSE), Erro Absoluto Médio (MAE) e Coeficiente de Determinação (R²).
+4. Visualização da importância das variáveis para entender quais são mais influentes na predição da variável alvo (`Skinfirmness`).
+
 ---
 
 ## Tools Used / Ferramentas Utilizadas
 
 **English:**
 - **Programming Language:** Python.
-- **Libraries:** Pandas, Matplotlib, Seaborn.
+- **Libraries:** Pandas, Matplotlib, Seaborn, Scikit-learn.
 - **Environment:** Google Colab.
 
 **Português:**
 - **Linguagem de Programação:** Python.
-- **Bibliotecas:** Pandas, Matplotlib, Seaborn.
+- **Bibliotecas:** Pandas, Matplotlib, Seaborn, Scikit-learn.
 - **Ambiente:** Google Colab.
 
 ---
@@ -108,12 +122,12 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
 ## Next Steps / Próximos Passos
 
 **English:**
-- Prepare data for modeling by encoding categorical variables and scaling numerical ones.
-- Begin initial model selection and evaluation.
+- Integrate model insights into Power BI dashboards.
+- Present findings interactively and explore relationships visually.
 
 **Português:**
-- Preparar os dados para modelagem, codificando variáveis categóricas e escalonando variáveis numéricas.
-- Iniciar a seleção e avaliação inicial de modelos.
+- Integrar os insights do modelo em dashboards no Power BI.
+- Apresentar as descobertas de forma interativa e explorar relações visualmente.
 
 ---
 
@@ -127,11 +141,13 @@ Este projeto tem como objetivo explorar e analisar um conjunto de dados de genó
 |   |-- step1_data_loading_and_eda.md   # Etapa 1
 |   |-- step2_correlation_analysis.md   # Etapa 2
 |   |-- step3_outlier_analysis.md       # Etapa 3
+|   |-- step4_data_modeling.md          # Etapa 4
 |
 |-- notebooks/
 |   |-- Wine_Genotype_Classification - Etapa 1.ipynb   # Notebook da Etapa 1
 |   |-- Wine_Genotype_Classification_Etapa_2.ipynb   # Notebook da Etapa 2
 |   |-- Wine_Genotype_Classification_Etapa_3.ipynb   # Notebook da Etapa 3
+|   |-- Wine_Genotype_Classification_Etapa_4.ipynb   # Notebook da Etapa 4
 |
 |-- README.md                 # Descrição geral do projeto
 
